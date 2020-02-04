@@ -1,24 +1,23 @@
-<title>网页标题栏显示时间</title>
- 
 <script language="JavaScript">
  
-var isMonth = new
+tmpDate = new Date();
  
-Array("1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月");
+date = tmpDate.getDate();
  
-var isDay = new
+month= tmpDate.getMonth() + 1 ;
  
-Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六","星期日");
+year= tmpDate.getYear();
  
-today = new Date () ;
+document.write(year);
  
-Year=today.getYear();
+document.write("年");
  
-Date=today.getDate();
+document.write(month);
  
-if (document.all)
+document.write("月");
  
-document.title="今天是: "+Year+"年"+isMonth[today.getMonth()]+Date+"日"+isDay[today.getDay()]
+document.write(date);
+ 
+document.write("日");
  
 </script>
-1
